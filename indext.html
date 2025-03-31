@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Realtime Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Realtime Currency Converter</h1>
+        <hr>
+        <div class="image-container">
+            <img alt="Currency converter illustration" src="https://storage.googleapis.com/a1aa/image/hOik_GVp7l_OmI5a9x7xYCZ5ScuMNqngaaYNk4d3_Fg.jpg"/>
+        </div>
+        <div>
+            <input id="amount" type="number" value="100"/>
+        </div>
+        <div class="currency-container">
+            <select id="fromCurrency">
+                <option value="USD">🇺🇸 USD</option>
+                <option value="INR">🇮🇳 INR</option>
+                <option value="EUR">🇪🇺 EUR</option>
+                <option value="GBP">🇬🇧 GBP</option>
+                <option value="JPY">🇯🇵 JPY</option>
+                <option value="CAD">🇨🇦 CAD</option>
+                <option value="AUD">🇦🇺 AUD</option>
+                <option value="CNY">🇨🇳 CNY</option>
+                <option value="CHF">🇨🇭 CHF</option>
+                <option value="SGD">🇸🇬 SGD</option>
+            </select>
+            <div id="swapCurrencies">↔</div>
+            <select id="toCurrency">
+                <option value="INR">🇮🇳 INR</option>
+                <option value="USD">🇺🇸 USD</option>
+                <option value="EUR">🇪🇺 EUR</option>
+                <option value="GBP">🇬🇧 GBP</option>
+                <option value="JPY">🇯🇵 JPY</option>
+                <option value="CAD">🇨🇦 CAD</option>
+                <option value="AUD">🇦🇺 AUD</option>
+                <option value="CNY">🇨🇳 CNY</option>
+                <option value="CHF">🇨🇭 CHF</option>
+                <option value="SGD">🇸🇬 SGD</option>
+            </select>
+        </div>
+        <p id="exchangeRate">Fetching exchange rate...</p>
+        <button id="convert">Convert</button>
+        <div class="result-container">
+            <p id="result">Result will appear here</p>
+        </div>
+        <button id="download">Download Result</button>
+    </div>
+</body>
+</html>
