@@ -69,3 +69,94 @@ button:hover {
     border-radius: 5px;
     margin-top: 10px;
 }
+
+/* === About Button - Mini Top Right === */
+#openAbout {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 4px 10px;
+    background-color: #2c7a7b;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+#openAbout:hover {
+    background-color: #225e5d;
+}
+
+/* === Popup Box - Small Top-Right Tooltip Style === */
+.popup {
+    position: fixed;
+    top: 42px;
+    right: -240px;
+    width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 12px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.popup.open {
+    right: 10px;
+}
+
+.popup-content {
+    position: relative;
+    max-height: 150px;
+    overflow-y: auto;
+    line-height: 1.4;
+    color: #333;
+}
+
+/* Close Button in Popup */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+/* === Mini Bubble - Top Right === */
+.bubble {
+    position: fixed;
+    top: 42px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 150, 255, 0.5);
+    border-radius: 50%;
+    animation: floatUp 2s ease-out forwards;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-60px) scale(0.4);
+        opacity: 0;
+    }
+}
+
